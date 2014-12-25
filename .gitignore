@@ -2,6 +2,7 @@ node_modules/
 src/bower_components/
 build/
 .sass-cache/
+.tmp/
 
 src/styles/main.css
 src/js/templates.js

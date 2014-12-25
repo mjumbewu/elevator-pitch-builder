@@ -202,6 +202,7 @@ module.exports = function(grunt) {
     'concat',
 //    'cssmin',
     'uglify',
+    'copy:dist',
 //    'filerev',
     'usemin'
   ]);
