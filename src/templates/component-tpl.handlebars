@@ -1,6 +1,12 @@
 <a href="#{{component.name}}"><h1 class="name">{{component.name}}</h1></a>
-<h2 class="label">{{component.label}}</h2>
 
-<p class="help">{{component.help}}</p>
+<div class="content">
+  <h2 class="label">{{component.label}}</h2>
 
-<textarea name="{{component.name}}-text">{{lookup pitch component.name}}</textarea>
+  <div class="component-text-wrapper">
+    <textarea name="{{component.name}}-text" class="component-text">{{lookup pitch component.name}}</textarea>
+  </div>
+
+  <p class="help animated expanded">{{component.help}}</p>
+
+</div>

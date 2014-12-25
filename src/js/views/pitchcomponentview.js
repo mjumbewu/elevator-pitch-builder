@@ -8,6 +8,8 @@ var Pitch = Pitch || {};
       options = options || {};
       this.pitchcomponentdata = options.component;
       this.setTemplate(options.template);
+
+      this.$el.on('click', '.help', _.bind(this.handleHelpClick, this));
     },
 
     getTemplateData: function() {
@@ -16,6 +18,10 @@ var Pitch = Pitch || {};
       data.component = this.pitchcomponentdata;
       return data;
     },
+
+    handleHelpClick: function() {
+      this.$('.help').toggleClass('expanded collapsed');
+    }
   });
 
 })();

@@ -93,32 +93,96 @@ section {
 		border-top: 1px solid rgba(0, 0, 0, 0.25);
 	}
 
+	.content {
+		width: 100%;
+		height: 100%;
+		box-sizing: border-box;
+		padding: 0 1rem;
+		position: relative;
+	}
+
+	.label {
+		font-size: 0.8rem;
+	}
+
+	.component-text-wrapper,
+	.help {
+		position: absolute;
+		left: 1rem;
+		right: 1rem;
+		bottom: 5rem;
+		top: 2rem;
+	}
+	.help.collapsed {
+		left: auto;
+		bottom: auto;
+		top: 4rem;
+		width: 2rem;
+		height: 2rem;
+		border-radius: 1rem;
+	}
+	.help.animated {
+		@include transition(top 0.5s $ease-way-in-out,
+			                width 0.5s $ease-way-in-out,
+			                height 0.5s $ease-way-in-out,
+			                border-radius 0.5s $ease-way-in-out);
+	}
+
+	.help:hover {
+		cursor: pointer;
+	}
+
+	.help {
+		margin: -0.5rem 1rem;
+		color: white;
+		padding: 1rem;
+		border: 1px solid rgba(0,0,0,0.25);
+		box-shadow: 0 0 3px rgba(0,0,0,0.5);
+	}
+
+	.component-text {
+		width: 100%;
+		height: 100%;
+	}
+
+	.who-section .label { color: $who-color; }
+	.what-section .label { color: $what-color; }
+	.why-section .label { color: $why-color; }
+	.goal-section .label { color: $goal-color; }
+	.review-section .label { color: $review-color; }
+
+	.who-section .help { background-color: $who-color; }
+	.what-section .help { background-color: $what-color; }
+	.why-section .help { background-color: $why-color; }
+	.goal-section .help { background-color: $goal-color; }
+	.review-section .help { background-color: $review-color; }
+
 	section:last-child .name {
 		border-bottom: none;
 	}
 
-	.animated.expanded,
-	.animated.collapsed {
+	section.animated.expanded,
+	section.animated.collapsed {
 		@include transition(height 0.5s $ease-way-in-out);
 	}
 
-	.expanded {
+	section.expanded {
 		height: 60%;
 	}
 
-	.collapsed {
+	section.collapsed {
 		height: 10%;
 	}
 
-	.animated.collapsed .name {
+	section.animated.collapsed .name {
 		@include transition(height 0.5s $ease-way-in-out);
 	}
 
-	.animated.expanded .name {
+	section.animated.expanded .name {
 		@include transition(height 0.5s $ease-way-in-out);
 	}
 
-	.collapsed .name {
+	section.collapsed .name {
 		height: 100%;
 	}
 
