@@ -19,7 +19,7 @@ html, body {
 }
 
 body {
-	background-color: #21183B;
+	background-color: gray;
 }
 
 section {
@@ -65,10 +65,15 @@ section {
  * ====================================
  */
 .pitch-container {
+	overflow: hidden;
+	box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+
 	section {
 		background-color: $component-gray;
 		box-sizing: border-box;
 		overflow: hidden;
+
+		box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
 	}
 
 	.name {
@@ -76,10 +81,16 @@ section {
 		background-color: black;
 		color: white;
 		padding: 0.7rem 1rem 0rem;
-		height: 2.2rem;
+		height: 16.67%;
 		text-transform: uppercase;
 		margin: 0 0 1rem 0;
 		box-sizing: border-box;
+		/*border-bottom: 1px solid $component-gray;*/
+		border-top: 1px solid rgba(0, 0, 0, 0.25);
+	}
+
+	section:last-child .name {
+		border-bottom: none;
 	}
 
 	.animated.expanded,
@@ -96,14 +107,20 @@ section {
 	}
 
 	.animated.collapsed .name {
-		@include transition(height 0.5s cubic-bezier(1,0,1,0));
+		@include transition(height 0.5s $ease-way-in-out);
 	}
 
 	.animated.expanded .name {
-		@include transition(height 0.5s cubic-bezier(0,1,0,1));
+		@include transition(height 0.5s $ease-way-in-out);
 	}
 
 	.collapsed .name {
 		height: 100%;
 	}
+
+	.who-section .name { background-color: $who-color; }
+	.what-section .name { background-color: $what-color; }
+	.why-section .name { background-color: $why-color; }
+	.goal-section .name { background-color: $goal-color; }
+	.review-section .name { background-color: $review-color; }
 }
