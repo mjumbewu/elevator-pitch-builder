@@ -83,7 +83,9 @@ var Pitch = Pitch || {};
 
     handleRoute: function() {
       if (!this.animationsInitialized) {
-        this.initializeSectionAnimations();
+        // Wait a little while before enabling animations for the first time,
+        // so that the initial route doesn't trigger animations.
+        _.delay(_.bind(this.initializeSectionAnimations, this), 300);
       }
     },
     handleIntroRoute: function() {
