@@ -1,0 +1,27 @@
+{
+  "name": "elevator-pitch-builder",
+  "version": "1.0.0",
+  "authors": [
+    "Mjumbe Wawatu Ukweli <mjumbewu@gmail.com>"
+  ],
+  "description": "A recreation of the Harvard Business School elevator pitch builder",
+  "main": "src/index.html",
+  "keywords": [
+    "business",
+    "elevator",
+    "pitch"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "backbone": "~1.1.2",
+    "handlebars": "~2.0.0",
+    "jquery": "~2.1.1"
+  }
+}

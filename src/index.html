@@ -1,0 +1,54 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="styles/main.css">
+  </head>
+
+  <body>
+
+    <div class="app-container">
+      <section class="intro-section onscreen"></section>
+
+      <div class="pitch-container">
+        <section class="who-section component collapsed"
+          data-label="Describe Who You Are"
+          data-help="Keep it short. Hint: What would you most want the listener to remember about you?"
+          data-name="who"></section>
+        <section class="what-section component collapsed"
+          data-label="Describe What You Do"
+          data-help="Here is where you state your value phrased as key results or impact. To organize your thoughts it may help to think of this as your tag line. Hint: this should allow the listener to understand how you or your company would add value."
+          data-name="what"></section>
+        <section class="why-section component collapsed"
+          data-label="Describe Why You Are Unique"
+          data-help="Now it's time to show the unique benefits that your and/or your company bring to business. Show what you do that is different or better than others."
+          data-name="why"></section>
+        <section class="goal-section component collapsed"
+          data-label="Describe Your Goal"
+          data-help="Describe your immediate goals. Goals should be concrete, defined, and realistic. Include a time frame. This is the final step and it should be readily apparent to the listener what you are asking of him or her."
+          data-name="goal"></section>
+        <section class="review-section collapsed"></section>
+      </div>
+    </div>
+
+    <!-- build:js js/vendor.js -->
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/handlebars/handlebars.runtime.js"></script>
+    <script src="bower_components/underscore/underscore.js"></script>
+    <script src="bower_components/backbone/backbone.js"></script>
+    <!-- endbuild -->
+
+    <!-- build:js js/main.js -->
+    <script src="js/templates.js"></script>
+    <script src="js/router.js"></script>
+    <script src="js/models.js"></script>
+    <script src="js/views/templateview.js"></script>
+    <script src="js/views/pitchcomponentview.js"></script>
+    <script src="js/views/pitchreviewview.js"></script>
+    <script src="js/app.js"></script>
+    <!-- endbuild -->
+
+    <script>
+      var app = new Pitch.App('.app-container');
+      Backbone.history.start();
+    </script>
+  </body>
+</html>

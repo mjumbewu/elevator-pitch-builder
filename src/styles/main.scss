@@ -1,0 +1,109 @@
+@import "compass/css3/transition";
+
+$who-color:      #ECB24F;
+$what-color:     #C7380E;
+$why-color:      #888457;
+$goal-color:     #536F72;
+$review-color:   #48211C;
+$component-gray: #EFEFE7;
+
+$ease-way-in:     cubic-bezier(0.755, 0.05, 0.855, 0.06);
+$ease-way-out:    cubic-bezier(0.23, 1, 0.32, 1);
+$ease-way-in-out: cubic-bezier(0.86, 0, 0.07, 1);
+
+
+html, body {
+	height: 100%;
+	padding: 0;
+	font-family: sans-serif;
+}
+
+body {
+	background-color: #21183B;
+}
+
+section {
+	padding: 0;
+}
+
+/*
+ * Intro Section
+ * ====================================
+ */
+.intro-section,
+.pitch-container {
+	position: absolute;
+	left: 1rem; top: 1rem; right: 1rem; bottom: 1rem;
+}
+
+.intro-section {
+	z-index: 100;
+	padding: 1rem;
+	background-color: white;
+	border: 1px solid black;
+}
+
+.animated.offscreen {
+	@include transition(top 0.5s $ease-way-in, bottom 0.5s $ease-way-in);
+}
+.offscreen {
+	top: -100%;
+	bottom: 100%;
+}
+
+.animated.onscreen {
+	@include transition(top 0.5s $ease-way-out, bottom 0.5s $ease-way-out);
+}
+.onscreen {
+	top: 1em;
+	bottom: 1em;
+}
+
+
+/*
+ * Pitch Components
+ * ====================================
+ */
+.pitch-container {
+	section {
+		background-color: $component-gray;
+		box-sizing: border-box;
+		overflow: hidden;
+	}
+
+	.name {
+		font-size: 0.8rem;
+		background-color: black;
+		color: white;
+		padding: 0.7rem 1rem 0rem;
+		height: 2.2rem;
+		text-transform: uppercase;
+		margin: 0 0 1rem 0;
+		box-sizing: border-box;
+	}
+
+	.animated.expanded,
+	.animated.collapsed {
+		@include transition(height 0.5s $ease-way-in-out);
+	}
+
+	.expanded {
+		height: 60%;
+	}
+
+	.collapsed {
+		height: 10%;
+	}
+
+	.animated.collapsed .name {
+		@include transition(height 0.5s cubic-bezier(1,0,1,0));
+	}
+
+	.animated.expanded .name {
+		@include transition(height 0.5s cubic-bezier(0,1,0,1));
+	}
+
+	.collapsed .name {
+		height: 100%;
+	}
+}
