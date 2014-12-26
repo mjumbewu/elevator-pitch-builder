@@ -87,11 +87,13 @@ section {
 		color: white;
 		padding: 0.7rem 1rem 0rem;
 		height: 3rem;
+		line-height: 1.6rem;
 		text-transform: uppercase;
 		margin: 0 0 1rem 0;
 		box-sizing: border-box;
 		/*border-bottom: 1px solid $component-gray;*/
 		border-top: 1px solid rgba(0, 0, 0, 0.25);
+		text-align: center
 	}
 
 	.content {
@@ -113,20 +115,26 @@ section {
 		right: 1rem;
 		bottom: 5rem;
 		top: 2rem;
+
+		margin-left: 0;
 	}
 	.help.collapsed {
-		left: auto;
-		bottom: auto;
-		top: 4rem;
-		width: 0;
-		height: 0;
-		border-radius: 1rem;
+		left: 100%;
+		right: 1rem;
+		bottom: 5rem;
+		top: 2rem;
+
+		margin-left: -6em;
+
+		border-radius: 0;
 	}
 	.help.animated {
-		@include transition(top 0.5s $ease-way-in-out,
-			                width 0.5s $ease-way-in-out,
-			                height 0.5s $ease-way-in-out,
-			                border-radius 0.5s $ease-way-in-out);
+		@include transition(left 0.5s $ease-way-out,
+			                right 0.5s $ease-way-out,
+			                bottom 0.5s $ease-way-out,
+			                top 0.5s $ease-way-out,
+			                margin-left 0.5s $ease-way-out,
+			                border-radius 0.5s $ease-way-out);
 	}
 
 	.help:hover {
@@ -134,16 +142,18 @@ section {
 	}
 
 	.help {
-		margin: -0.5rem 1rem;
+		margin: 1rem;
 		color: white;
 		padding: 1rem;
-		border: 1px solid rgba(0,0,0,0.25);
-		box-shadow: 0 0 3px rgba(0,0,0,0.5);
+		/*border: 1px solid rgba(0,0,0,0.25);*/
+		/*box-shadow: 0 0 3px rgba(0,0,0,0.5);*/
 	}
 
 	.component-text {
 		width: 100%;
 		height: 100%;
+		box-sizing: border-box;
+		padding: 1rem 6rem 1rem 1rem;
 	}
 
 	.who-section .label { color: $who-color; }
@@ -164,14 +174,14 @@ section {
 
 	section.animated.expanded,
 	section.animated.collapsed {
-		@include transition(left 0.5s $ease-way-in-out,
-			                right 0.5s $ease-way-in-out,
-			                top 0.5s $ease-way-in-out,
-			                bottom 0.5s $ease-way-in-out,
-			                margin-left 0.5s $ease-way-in-out,
-			                margin-right 0.5s $ease-way-in-out,
-			                margin-top 0.5s $ease-way-in-out,
-			                border-radius 0.5s $ease-way-in-out);
+		@include transition(left 0.5s $ease-way-out,
+			                right 0.5s $ease-way-out,
+			                top 0.5s $ease-way-out,
+			                bottom 0.5s $ease-way-out,
+			                margin-left 0.5s $ease-way-out,
+			                margin-right 0.5s $ease-way-out,
+			                margin-top 0.5s $ease-way-out,
+			                border-radius 0.5s $ease-way-out);
 	}
 
 	section.expanded {
@@ -184,17 +194,15 @@ section {
 		margin-left: 0;
 		margin-right: 0;
 		margin-top: 0;
+
+		border-radius: 0.25rem;
 	}
 
 	section.collapsed {
 		position: absolute;
 		top: 100%;
 		bottom: 1rem;
-		left: 0;
-		right: 100%;
 
-		margin-left: 0;
-		margin-right: -2rem;
 		margin-top: -5rem;
 
 		border-radius: 2rem;
@@ -206,16 +214,19 @@ section {
 	.goal-section.collapsed   { margin-left: -3rem; left: 75%;  margin-right: -1rem; right: 25%; }
 	.review-section.collapsed { margin-left: -4rem; left: 100%; margin-right: -0rem; right: 0%; }
 
+	section.animated.expanded .name,
 	section.animated.collapsed .name {
-		@include transition(height 0.5s $ease-way-in-out);
-	}
-
-	section.animated.expanded .name {
-		@include transition(height 0.5s $ease-way-in-out);
+		@include transition(height 0.25s $ease-way-out,
+			                padding-top 0.5s $ease-way-out,
+			                padding-left 0.5s $ease-way-out,
+			                padding-right 0.5s $ease-way-out,
+			                line-height 0.5s $ease-way-out);
 	}
 
 	section.collapsed .name {
 		height: 100%;
+		padding: 0;
+		line-height: 4rem;
 	}
 
 	.who-section .name { background-color: $who-color; }
