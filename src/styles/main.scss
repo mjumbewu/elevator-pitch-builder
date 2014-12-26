@@ -15,6 +15,7 @@ $ease-way-in-out: cubic-bezier(0.86, 0, 0.07, 1);
 html, body {
 	height: 100%;
 	padding: 0;
+	margin: 0;
 	font-family: sans-serif;
 }
 
@@ -65,8 +66,8 @@ section {
  * ====================================
  */
 .pitch-container {
-	overflow: hidden;
-	box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+	/*overflow: hidden;*/
+	/*box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);*/
 
 	section {
 		background-color: $component-gray;
@@ -85,7 +86,7 @@ section {
 		background-color: black;
 		color: white;
 		padding: 0.7rem 1rem 0rem;
-		height: 16.67%;
+		height: 3rem;
 		text-transform: uppercase;
 		margin: 0 0 1rem 0;
 		box-sizing: border-box;
@@ -117,8 +118,8 @@ section {
 		left: auto;
 		bottom: auto;
 		top: 4rem;
-		width: 2rem;
-		height: 2rem;
+		width: 0;
+		height: 0;
 		border-radius: 1rem;
 	}
 	.help.animated {
@@ -163,16 +164,47 @@ section {
 
 	section.animated.expanded,
 	section.animated.collapsed {
-		@include transition(height 0.5s $ease-way-in-out);
+		@include transition(left 0.5s $ease-way-in-out,
+			                right 0.5s $ease-way-in-out,
+			                top 0.5s $ease-way-in-out,
+			                bottom 0.5s $ease-way-in-out,
+			                margin-left 0.5s $ease-way-in-out,
+			                margin-right 0.5s $ease-way-in-out,
+			                margin-top 0.5s $ease-way-in-out,
+			                border-radius 0.5s $ease-way-in-out);
 	}
 
 	section.expanded {
-		height: 60%;
+		position: absolute;
+		left: 0;
+		right: 0;
+		top: 0;
+		bottom: 6rem;
+
+		margin-left: 0;
+		margin-right: 0;
+		margin-top: 0;
 	}
 
 	section.collapsed {
-		height: 10%;
+		position: absolute;
+		top: 100%;
+		bottom: 1rem;
+		left: 0;
+		right: 100%;
+
+		margin-left: 0;
+		margin-right: -2rem;
+		margin-top: -5rem;
+
+		border-radius: 2rem;
 	}
+
+	.who-section.collapsed    { margin-left: 0;     left: 0;    margin-right: -4rem; right: 100%; }
+	.what-section.collapsed   { margin-left: -1rem; left: 25%;  margin-right: -3rem; right: 75%; }
+	.why-section.collapsed    { margin-left: -2rem; left: 50%;  margin-right: -2rem; right: 50%; }
+	.goal-section.collapsed   { margin-left: -3rem; left: 75%;  margin-right: -1rem; right: 25%; }
+	.review-section.collapsed { margin-left: -4rem; left: 100%; margin-right: -0rem; right: 0%; }
 
 	section.animated.collapsed .name {
 		@include transition(height 0.5s $ease-way-in-out);
