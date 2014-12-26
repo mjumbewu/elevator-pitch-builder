@@ -25,6 +25,7 @@ body {
 
 section {
 	padding: 0;
+	overflow: hidden;
 }
 
 /*
@@ -72,7 +73,6 @@ section {
 	section {
 		background-color: $component-gray;
 		box-sizing: border-box;
-		overflow: hidden;
 
 		box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
 	}
@@ -120,13 +120,8 @@ section {
 	}
 	.help.collapsed {
 		left: 100%;
-		right: 1rem;
-		bottom: 5rem;
-		top: 2rem;
 
 		margin-left: -6em;
-
-		border-radius: 0;
 	}
 	.help.animated {
 		@include transition(left 0.5s $ease-way-out,
@@ -195,7 +190,7 @@ section {
 		margin-right: 0;
 		margin-top: 0;
 
-		border-radius: 0.25rem;
+		border-radius: 0;
 	}
 
 	section.collapsed {
@@ -234,4 +229,45 @@ section {
 	.why-section .name { background-color: $why-color; }
 	.goal-section .name { background-color: $goal-color; }
 	.review-section .name { background-color: $review-color; }
+}
+
+@media (max-height: 18rem) { /* ...keyboard shown on mobile... */
+	.pitch-container {
+		section.collapsed {
+			display: none;
+		}
+
+		section.expanded {
+			bottom: 0;
+		}
+	}
+}
+
+@media (max-height: 12rem) {
+	.pitch-container {
+		section.expanded .name {
+			display: none;
+		}
+
+		.component-text-wrapper, .help {
+			bottom: 1rem;
+		}
+	}
+}
+
+@media (max-height: 6rem) {
+	.pitch-container {
+		left: 0; top: 0; right: 0; bottom: 0;
+
+		section.expanded .label {
+			display: none;
+		}
+
+		.component-text-wrapper, .help {
+			left: 0;
+			right: 0;
+			bottom: 0;
+			top: 0;
+		}
+	}
 }
