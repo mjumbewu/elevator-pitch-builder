@@ -46,7 +46,8 @@ section {
 }
 
 .animated.offscreen {
-	@include transition(top 0.5s $ease-way-in, bottom 0.5s $ease-way-in);
+	@include transition(top 0.15s linear,
+		                bottom 0.15s linear);
 }
 .offscreen {
 	top: -100%;
@@ -54,7 +55,8 @@ section {
 }
 
 .animated.onscreen {
-	@include transition(top 0.5s $ease-way-out, bottom 0.5s $ease-way-out);
+	@include transition(top 0.5s $ease-way-out,
+		                bottom 0.5s $ease-way-out);
 }
 .onscreen {
 	top: 1em;
