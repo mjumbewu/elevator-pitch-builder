@@ -182,14 +182,14 @@ section {
 	}
 
 	section.animated.expanded {
-		@include transition(left 0.5s $ease-way-in-out,
-			                right 0.5s $ease-way-in-out,
-			                top 0.5s $ease-way-in-out,
-			                bottom 0.5s $ease-way-in-out,
-			                margin-left 0.5s $ease-way-in-out,
-			                margin-right 0.5s $ease-way-in-out,
-			                margin-top 0.5s $ease-way-in-out,
-			                border-radius 0.5s $ease-way-in-out);
+		@include transition(left 0.5s $ease-way-in-out 0.3s,
+			                right 0.5s $ease-way-in-out 0.3s,
+			                top 0.5s $ease-way-in-out 0.3s,
+			                bottom 0.5s $ease-way-in-out 0.3s,
+			                margin-left 0.5s $ease-way-in-out 0.3s,
+			                margin-right 0.5s $ease-way-in-out 0.3s,
+			                margin-top 0.5s $ease-way-in-out 0.3s,
+			                border-radius 0.5s $ease-way-in-out 0.3s);
 	}
 
 	section.animated.collapsed {
@@ -233,13 +233,20 @@ section {
 	.goal-section.collapsed   { margin-left: -3rem; left: 75%;  margin-right: -1rem; right: 25%; }
 	.review-section.collapsed { margin-left: -4rem; left: 100%; margin-right: -0rem; right: 0%; }
 
-	section.animated.expanded .name,
 	section.animated.collapsed .name {
 		@include transition(height 0.25s $ease-way-out,
 			                padding-top 0.5s $ease-way-out,
 			                padding-left 0.5s $ease-way-out,
 			                padding-right 0.5s $ease-way-out,
 			                line-height 0.5s $ease-way-out);
+	}
+
+	section.animated.expanded .name {
+		@include transition(height 0.5s $ease-way-out 0.3s,
+			                padding-top 0.5s $ease-way-out 0.3s,
+			                padding-left 0.5s $ease-way-out 0.3s,
+			                padding-right 0.5s $ease-way-out 0.3s,
+			                line-height 0.5s $ease-way-out 0.3s);
 	}
 
 	section.collapsed .name {
