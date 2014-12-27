@@ -148,6 +148,14 @@ section {
 		@include transition(opacity 0.3s $ease-way-in 0.4s);
 	}
 
+	.help-text-close {
+		text-decoration: underline;
+		position: absolute;
+		font-size: 0.8rem;
+		right: 0.5rem;
+		bottom: 0.5rem;
+	}
+
 	.help:hover {
 		cursor: pointer;
 	}
@@ -510,7 +518,7 @@ section {
 	}
 }
 
-@media (max-width: 25rem) and (max-height: 17rem) {
+@media (max-width: 25rem) and (max-height: 25rem) {
 	.pitch-container {
 		.pitch-analysis {
 			display: none;
