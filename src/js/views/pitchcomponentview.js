@@ -11,6 +11,8 @@ var Pitch = Pitch || {};
       this.setTemplate(options.template);
 
       this.$el.on('click', '.help', _.bind(this.handleHelpClick, this));
+      this.$el.on('swiperight', '.help', _.bind(this.handleHelpSwipeRight, this));
+      this.$el.on('swipeleft', '.help', _.bind(this.handleHelpSwipeLeft, this));
       this.$el.on('focus', '.component-text', _.bind(this.handleTextFocus, this));
       this.$el.on('input', '.component-text', _.bind(this.handleTextInput, this));
       this.$el.on('blur', '.component-text', _.bind(this.handleTextBlur, this));
@@ -36,6 +38,14 @@ var Pitch = Pitch || {};
 
     handleHelpClick: function() {
       this.$('.help').toggleClass('expanded collapsed');
+    },
+
+    handleHelpSwipeRight: function() {
+      this.$('.help').addClass('collapsed').removeClass('expanded');
+    },
+
+    handleHelpSwipeLeft: function() {
+      this.$('.help').removeClass('collapsed').addClass('expanded');
     },
 
     handleTextInput: function() {

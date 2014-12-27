@@ -84,6 +84,7 @@ section {
 	}
 
 	.name {
+		position: relative;
 		font-size: 0.8rem;
 		background-color: black;
 		color: white;
@@ -95,7 +96,8 @@ section {
 		box-sizing: border-box;
 		/*border-bottom: 1px solid $component-gray;*/
 		border-top: 1px solid rgba(0, 0, 0, 0.25);
-		text-align: center
+		text-align: center;
+		z-index: 100;
 	}
 
 	.content {
@@ -271,7 +273,7 @@ section {
 		position: absolute;
 		left: 1rem;
 		right: 1rem;
-		bottom: 10rem;
+		bottom: 11rem;
 		top: 2rem;
 
 		box-sizing: border-box;
@@ -294,12 +296,62 @@ section {
 		font-size: 0.8rem;
 	}
 
-	section.collapsed .pitch-review-help {
+	section.collapsed .pitch-review-help,
+	section.collapsed .pitch-analysis {
 		display: none;
 	}
 
 	.pitch-analysis {
 		display: none;
+	}
+
+	.pitch-review-help {
+		display: none;
+	}
+
+	.pitch-analysis {
+		display: block;
+		position: absolute;
+		top: 100%;
+		bottom: 1rem;
+		left: 1em;
+		right: 1rem;
+
+		padding: 1em;
+		margin-top: -10em;
+
+		background-color: #AC171D;
+		color: white;
+		font-weight: bold;
+	}
+
+	.pitch-analysis span {
+		display: block;
+	}
+
+	.stat-wrapper {
+		display: inline-block;
+		width: 50%;
+	}
+
+	.stat-wrapper:first-child {
+		margin-top: 0;
+	}
+
+	.stat-label {
+		font-size: 0.8rem;
+	}
+
+	.stat {
+		font-size: 1.5rem;
+	}
+}
+
+@media (min-height: 25rem) {
+	.pitch-container {
+		.pitch-analysis {
+			bottom: 5rem;
+		}
 	}
 }
 
@@ -307,18 +359,24 @@ section {
 	.pitch-container {
 		.pitch-review {
 			right: 13rem;
+			bottom: 10rem;
+		}
+
+		.pitch-review-help {
+			display: block;
 		}
 
 		.pitch-analysis {
 			display: block;
 			position: absolute;
 			top: 0;
-			bottom: 5rem;
+			bottom: 10rem;
 			left: 100%;
 			right: 1rem;
 
 			padding: 1em;
 			margin-left: -12rem;
+			margin-top: 0;
 
 			background-color: #AC171D;
 			color: white;
@@ -330,7 +388,9 @@ section {
 		}
 
 		.stat-wrapper {
+			display: block;
 			margin-top: 1rem;
+			width: 100%;
 		}
 
 		.stat-wrapper:first-child {
@@ -347,21 +407,14 @@ section {
 	}
 }
 
-@media (min-height: 25rem) {
-	.pitch-container {
-		.pitch-analysis {
-			bottom: 10rem;
-		}
-	}
-}
-
 @media (max-height: 25rem) {
 	.pitch-container {
 		.pitch-review-help {
 			display: none;
 		}
 
-		.pitch-review {
+		.pitch-review,
+		.pitch-analysis {
 			bottom: 5rem;
 		}
 	}
@@ -426,6 +479,11 @@ section {
 		.component-text-wrapper, .help {
 			bottom: 1rem;
 		}
+
+		.pitch-review,
+		.pitch-analysis {
+			bottom: 1rem;
+		}
 	}
 }
 
@@ -440,6 +498,12 @@ section {
 		.component-text-wrapper, .help {
 			left: 0;
 			right: 0;
+			bottom: 0;
+			top: 0;
+		}
+
+		.pitch-review,
+		.pitch-analysis {
 			bottom: 0;
 			top: 0;
 		}
