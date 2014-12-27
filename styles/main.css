@@ -578,3 +578,9 @@ section {
     top: 0;
   }
 }
+@media (max-width: 25rem) and (max-height: 17rem) {
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/mjumbewu\/Programming\/projects\/elevator-pitch-builder\/src\/styles\/main\.scss}line{font-family:\00003515}}
+  .pitch-container .pitch-analysis {
+    display: none;
+  }
+}
