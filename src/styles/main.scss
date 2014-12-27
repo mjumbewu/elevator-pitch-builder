@@ -509,3 +509,11 @@ section {
 		}
 	}
 }
+
+@media (max-width: 25rem) and (max-height: 17rem) {
+	.pitch-container {
+		.pitch-analysis {
+			display: none;
+		}
+	}
+}
