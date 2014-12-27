@@ -122,24 +122,25 @@ section {
   bottom: 5rem;
   top: 2rem;
   margin-left: 0;
+  overflow: hidden;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/mjumbewu\/Programming\/projects\/elevator-pitch-builder\/src\/styles\/main\.scss}line{font-family:\00003123}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/mjumbewu\/Programming\/projects\/elevator-pitch-builder\/src\/styles\/main\.scss}line{font-family:\00003124}}
 .pitch-container .help.collapsed {
   left: 100%;
   margin-left: -6em;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/mjumbewu\/Programming\/projects\/elevator-pitch-builder\/src\/styles\/main\.scss}line{font-family:\00003128}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/mjumbewu\/Programming\/projects\/elevator-pitch-builder\/src\/styles\/main\.scss}line{font-family:\00003129}}
 .pitch-container .help.animated {
   -moz-transition: left 0.5s cubic-bezier(0.23, 1, 0.32, 1), right 0.5s cubic-bezier(0.23, 1, 0.32, 1), bottom 0.5s cubic-bezier(0.23, 1, 0.32, 1), top 0.5s cubic-bezier(0.23, 1, 0.32, 1), margin-left 0.5s cubic-bezier(0.23, 1, 0.32, 1), border-radius 0.5s cubic-bezier(0.23, 1, 0.32, 1);
   -o-transition: left 0.5s cubic-bezier(0.23, 1, 0.32, 1), right 0.5s cubic-bezier(0.23, 1, 0.32, 1), bottom 0.5s cubic-bezier(0.23, 1, 0.32, 1), top 0.5s cubic-bezier(0.23, 1, 0.32, 1), margin-left 0.5s cubic-bezier(0.23, 1, 0.32, 1), border-radius 0.5s cubic-bezier(0.23, 1, 0.32, 1);
   -webkit-transition: left 0.5s cubic-bezier(0.23, 1, 0.32, 1), right 0.5s cubic-bezier(0.23, 1, 0.32, 1), bottom 0.5s cubic-bezier(0.23, 1, 0.32, 1), top 0.5s cubic-bezier(0.23, 1, 0.32, 1), margin-left 0.5s cubic-bezier(0.23, 1, 0.32, 1), border-radius 0.5s cubic-bezier(0.23, 1, 0.32, 1);
   transition: left 0.5s cubic-bezier(0.23, 1, 0.32, 1), right 0.5s cubic-bezier(0.23, 1, 0.32, 1), bottom 0.5s cubic-bezier(0.23, 1, 0.32, 1), top 0.5s cubic-bezier(0.23, 1, 0.32, 1), margin-left 0.5s cubic-bezier(0.23, 1, 0.32, 1), border-radius 0.5s cubic-bezier(0.23, 1, 0.32, 1);
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/mjumbewu\/Programming\/projects\/elevator-pitch-builder\/src\/styles\/main\.scss}line{font-family:\00003137}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/mjumbewu\/Programming\/projects\/elevator-pitch-builder\/src\/styles\/main\.scss}line{font-family:\00003138}}
 .pitch-container .help:hover {
   cursor: pointer;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/mjumbewu\/Programming\/projects\/elevator-pitch-builder\/src\/styles\/main\.scss}line{font-family:\00003141}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/mjumbewu\/Programming\/projects\/elevator-pitch-builder\/src\/styles\/main\.scss}line{font-family:\00003142}}
 .pitch-container .help {
   margin: 1rem;
   color: white;
@@ -147,72 +148,72 @@ section {
   /*border: 1px solid rgba(0,0,0,0.25);*/
   /*box-shadow: 0 0 3px rgba(0,0,0,0.5);*/
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/mjumbewu\/Programming\/projects\/elevator-pitch-builder\/src\/styles\/main\.scss}line{font-family:\00003149}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/mjumbewu\/Programming\/projects\/elevator-pitch-builder\/src\/styles\/main\.scss}line{font-family:\00003150}}
 .pitch-container .component-text {
   width: 100%;
   height: 100%;
   box-sizing: border-box;
   padding: 1rem 6rem 1rem 1rem;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/mjumbewu\/Programming\/projects\/elevator-pitch-builder\/src\/styles\/main\.scss}line{font-family:\00003156}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/mjumbewu\/Programming\/projects\/elevator-pitch-builder\/src\/styles\/main\.scss}line{font-family:\00003157}}
 .pitch-container .who-section .label {
   color: #ECB24F;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/mjumbewu\/Programming\/projects\/elevator-pitch-builder\/src\/styles\/main\.scss}line{font-family:\00003157}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/mjumbewu\/Programming\/projects\/elevator-pitch-builder\/src\/styles\/main\.scss}line{font-family:\00003158}}
 .pitch-container .what-section .label {
   color: #C7380E;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/mjumbewu\/Programming\/projects\/elevator-pitch-builder\/src\/styles\/main\.scss}line{font-family:\00003158}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/mjumbewu\/Programming\/projects\/elevator-pitch-builder\/src\/styles\/main\.scss}line{font-family:\00003159}}
 .pitch-container .why-section .label {
   color: #888457;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/mjumbewu\/Programming\/projects\/elevator-pitch-builder\/src\/styles\/main\.scss}line{font-family:\00003159}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/mjumbewu\/Programming\/projects\/elevator-pitch-builder\/src\/styles\/main\.scss}line{font-family:\00003160}}
 .pitch-container .goal-section .label {
   color: #536F72;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/mjumbewu\/Programming\/projects\/elevator-pitch-builder\/src\/styles\/main\.scss}line{font-family:\00003160}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/mjumbewu\/Programming\/projects\/elevator-pitch-builder\/src\/styles\/main\.scss}line{font-family:\00003161}}
 .pitch-container .review-section .label {
   color: #48211C;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/mjumbewu\/Programming\/projects\/elevator-pitch-builder\/src\/styles\/main\.scss}line{font-family:\00003162}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/mjumbewu\/Programming\/projects\/elevator-pitch-builder\/src\/styles\/main\.scss}line{font-family:\00003163}}
 .pitch-container .who-section .help {
   background-color: #ECB24F;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/mjumbewu\/Programming\/projects\/elevator-pitch-builder\/src\/styles\/main\.scss}line{font-family:\00003163}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/mjumbewu\/Programming\/projects\/elevator-pitch-builder\/src\/styles\/main\.scss}line{font-family:\00003164}}
 .pitch-container .what-section .help {
   background-color: #C7380E;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/mjumbewu\/Programming\/projects\/elevator-pitch-builder\/src\/styles\/main\.scss}line{font-family:\00003164}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/mjumbewu\/Programming\/projects\/elevator-pitch-builder\/src\/styles\/main\.scss}line{font-family:\00003165}}
 .pitch-container .why-section .help {
   background-color: #888457;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/mjumbewu\/Programming\/projects\/elevator-pitch-builder\/src\/styles\/main\.scss}line{font-family:\00003165}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/mjumbewu\/Programming\/projects\/elevator-pitch-builder\/src\/styles\/main\.scss}line{font-family:\00003166}}
 .pitch-container .goal-section .help {
   background-color: #536F72;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/mjumbewu\/Programming\/projects\/elevator-pitch-builder\/src\/styles\/main\.scss}line{font-family:\00003166}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/mjumbewu\/Programming\/projects\/elevator-pitch-builder\/src\/styles\/main\.scss}line{font-family:\00003167}}
 .pitch-container .review-section .help {
   background-color: #48211C;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/mjumbewu\/Programming\/projects\/elevator-pitch-builder\/src\/styles\/main\.scss}line{font-family:\00003168}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/mjumbewu\/Programming\/projects\/elevator-pitch-builder\/src\/styles\/main\.scss}line{font-family:\00003169}}
 .pitch-container section:last-child .name {
   border-bottom: none;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/mjumbewu\/Programming\/projects\/elevator-pitch-builder\/src\/styles\/main\.scss}line{font-family:\00003172}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/mjumbewu\/Programming\/projects\/elevator-pitch-builder\/src\/styles\/main\.scss}line{font-family:\00003173}}
 .pitch-container section.animated.expanded {
   -moz-transition: left 0.5s cubic-bezier(0.86, 0, 0.07, 1), right 0.5s cubic-bezier(0.86, 0, 0.07, 1), top 0.5s cubic-bezier(0.86, 0, 0.07, 1), bottom 0.5s cubic-bezier(0.86, 0, 0.07, 1), margin-left 0.5s cubic-bezier(0.86, 0, 0.07, 1), margin-right 0.5s cubic-bezier(0.86, 0, 0.07, 1), margin-top 0.5s cubic-bezier(0.86, 0, 0.07, 1), border-radius 0.5s cubic-bezier(0.86, 0, 0.07, 1);
   -o-transition: left 0.5s cubic-bezier(0.86, 0, 0.07, 1), right 0.5s cubic-bezier(0.86, 0, 0.07, 1), top 0.5s cubic-bezier(0.86, 0, 0.07, 1), bottom 0.5s cubic-bezier(0.86, 0, 0.07, 1), margin-left 0.5s cubic-bezier(0.86, 0, 0.07, 1), margin-right 0.5s cubic-bezier(0.86, 0, 0.07, 1), margin-top 0.5s cubic-bezier(0.86, 0, 0.07, 1), border-radius 0.5s cubic-bezier(0.86, 0, 0.07, 1);
   -webkit-transition: left 0.5s cubic-bezier(0.86, 0, 0.07, 1), right 0.5s cubic-bezier(0.86, 0, 0.07, 1), top 0.5s cubic-bezier(0.86, 0, 0.07, 1), bottom 0.5s cubic-bezier(0.86, 0, 0.07, 1), margin-left 0.5s cubic-bezier(0.86, 0, 0.07, 1), margin-right 0.5s cubic-bezier(0.86, 0, 0.07, 1), margin-top 0.5s cubic-bezier(0.86, 0, 0.07, 1), border-radius 0.5s cubic-bezier(0.86, 0, 0.07, 1);
   transition: left 0.5s cubic-bezier(0.86, 0, 0.07, 1), right 0.5s cubic-bezier(0.86, 0, 0.07, 1), top 0.5s cubic-bezier(0.86, 0, 0.07, 1), bottom 0.5s cubic-bezier(0.86, 0, 0.07, 1), margin-left 0.5s cubic-bezier(0.86, 0, 0.07, 1), margin-right 0.5s cubic-bezier(0.86, 0, 0.07, 1), margin-top 0.5s cubic-bezier(0.86, 0, 0.07, 1), border-radius 0.5s cubic-bezier(0.86, 0, 0.07, 1);
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/mjumbewu\/Programming\/projects\/elevator-pitch-builder\/src\/styles\/main\.scss}line{font-family:\00003183}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/mjumbewu\/Programming\/projects\/elevator-pitch-builder\/src\/styles\/main\.scss}line{font-family:\00003184}}
 .pitch-container section.animated.collapsed {
   -moz-transition: left 0.5s cubic-bezier(0.23, 1, 0.32, 1), right 0.5s cubic-bezier(0.23, 1, 0.32, 1), top 0.5s cubic-bezier(0.23, 1, 0.32, 1), bottom 0.5s cubic-bezier(0.23, 1, 0.32, 1), margin-left 0.5s cubic-bezier(0.23, 1, 0.32, 1), margin-right 0.5s cubic-bezier(0.23, 1, 0.32, 1), margin-top 0.5s cubic-bezier(0.23, 1, 0.32, 1), border-radius 0.5s cubic-bezier(0.23, 1, 0.32, 1);
   -o-transition: left 0.5s cubic-bezier(0.23, 1, 0.32, 1), right 0.5s cubic-bezier(0.23, 1, 0.32, 1), top 0.5s cubic-bezier(0.23, 1, 0.32, 1), bottom 0.5s cubic-bezier(0.23, 1, 0.32, 1), margin-left 0.5s cubic-bezier(0.23, 1, 0.32, 1), margin-right 0.5s cubic-bezier(0.23, 1, 0.32, 1), margin-top 0.5s cubic-bezier(0.23, 1, 0.32, 1), border-radius 0.5s cubic-bezier(0.23, 1, 0.32, 1);
   -webkit-transition: left 0.5s cubic-bezier(0.23, 1, 0.32, 1), right 0.5s cubic-bezier(0.23, 1, 0.32, 1), top 0.5s cubic-bezier(0.23, 1, 0.32, 1), bottom 0.5s cubic-bezier(0.23, 1, 0.32, 1), margin-left 0.5s cubic-bezier(0.23, 1, 0.32, 1), margin-right 0.5s cubic-bezier(0.23, 1, 0.32, 1), margin-top 0.5s cubic-bezier(0.23, 1, 0.32, 1), border-radius 0.5s cubic-bezier(0.23, 1, 0.32, 1);
   transition: left 0.5s cubic-bezier(0.23, 1, 0.32, 1), right 0.5s cubic-bezier(0.23, 1, 0.32, 1), top 0.5s cubic-bezier(0.23, 1, 0.32, 1), bottom 0.5s cubic-bezier(0.23, 1, 0.32, 1), margin-left 0.5s cubic-bezier(0.23, 1, 0.32, 1), margin-right 0.5s cubic-bezier(0.23, 1, 0.32, 1), margin-top 0.5s cubic-bezier(0.23, 1, 0.32, 1), border-radius 0.5s cubic-bezier(0.23, 1, 0.32, 1);
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/mjumbewu\/Programming\/projects\/elevator-pitch-builder\/src\/styles\/main\.scss}line{font-family:\00003194}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/mjumbewu\/Programming\/projects\/elevator-pitch-builder\/src\/styles\/main\.scss}line{font-family:\00003195}}
 .pitch-container section.expanded {
   position: absolute;
   left: 0;
@@ -224,7 +225,7 @@ section {
   margin-top: 0;
   border-radius: 0;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/mjumbewu\/Programming\/projects\/elevator-pitch-builder\/src\/styles\/main\.scss}line{font-family:\00003208}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/mjumbewu\/Programming\/projects\/elevator-pitch-builder\/src\/styles\/main\.scss}line{font-family:\00003209}}
 .pitch-container section.collapsed {
   position: absolute;
   top: 100%;
@@ -232,42 +233,42 @@ section {
   margin-top: -4rem;
   border-radius: 2rem;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/mjumbewu\/Programming\/projects\/elevator-pitch-builder\/src\/styles\/main\.scss}line{font-family:\00003218}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/mjumbewu\/Programming\/projects\/elevator-pitch-builder\/src\/styles\/main\.scss}line{font-family:\00003219}}
 .pitch-container .who-section.collapsed {
   margin-left: 0;
   left: 0;
   margin-right: -4rem;
   right: 100%;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/mjumbewu\/Programming\/projects\/elevator-pitch-builder\/src\/styles\/main\.scss}line{font-family:\00003219}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/mjumbewu\/Programming\/projects\/elevator-pitch-builder\/src\/styles\/main\.scss}line{font-family:\00003220}}
 .pitch-container .what-section.collapsed {
   margin-left: -1rem;
   left: 25%;
   margin-right: -3rem;
   right: 75%;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/mjumbewu\/Programming\/projects\/elevator-pitch-builder\/src\/styles\/main\.scss}line{font-family:\00003220}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/mjumbewu\/Programming\/projects\/elevator-pitch-builder\/src\/styles\/main\.scss}line{font-family:\00003221}}
 .pitch-container .why-section.collapsed {
   margin-left: -2rem;
   left: 50%;
   margin-right: -2rem;
   right: 50%;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/mjumbewu\/Programming\/projects\/elevator-pitch-builder\/src\/styles\/main\.scss}line{font-family:\00003221}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/mjumbewu\/Programming\/projects\/elevator-pitch-builder\/src\/styles\/main\.scss}line{font-family:\00003222}}
 .pitch-container .goal-section.collapsed {
   margin-left: -3rem;
   left: 75%;
   margin-right: -1rem;
   right: 25%;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/mjumbewu\/Programming\/projects\/elevator-pitch-builder\/src\/styles\/main\.scss}line{font-family:\00003222}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/mjumbewu\/Programming\/projects\/elevator-pitch-builder\/src\/styles\/main\.scss}line{font-family:\00003223}}
 .pitch-container .review-section.collapsed {
   margin-left: -4rem;
   left: 100%;
   margin-right: -0rem;
   right: 0%;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/mjumbewu\/Programming\/projects\/elevator-pitch-builder\/src\/styles\/main\.scss}line{font-family:\00003224}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/mjumbewu\/Programming\/projects\/elevator-pitch-builder\/src\/styles\/main\.scss}line{font-family:\00003225}}
 .pitch-container section.animated.expanded .name,
 .pitch-container section.animated.collapsed .name {
   -moz-transition: height 0.25s cubic-bezier(0.23, 1, 0.32, 1), padding-top 0.5s cubic-bezier(0.23, 1, 0.32, 1), padding-left 0.5s cubic-bezier(0.23, 1, 0.32, 1), padding-right 0.5s cubic-bezier(0.23, 1, 0.32, 1), line-height 0.5s cubic-bezier(0.23, 1, 0.32, 1);
@@ -275,53 +276,53 @@ section {
   -webkit-transition: height 0.25s cubic-bezier(0.23, 1, 0.32, 1), padding-top 0.5s cubic-bezier(0.23, 1, 0.32, 1), padding-left 0.5s cubic-bezier(0.23, 1, 0.32, 1), padding-right 0.5s cubic-bezier(0.23, 1, 0.32, 1), line-height 0.5s cubic-bezier(0.23, 1, 0.32, 1);
   transition: height 0.25s cubic-bezier(0.23, 1, 0.32, 1), padding-top 0.5s cubic-bezier(0.23, 1, 0.32, 1), padding-left 0.5s cubic-bezier(0.23, 1, 0.32, 1), padding-right 0.5s cubic-bezier(0.23, 1, 0.32, 1), line-height 0.5s cubic-bezier(0.23, 1, 0.32, 1);
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/mjumbewu\/Programming\/projects\/elevator-pitch-builder\/src\/styles\/main\.scss}line{font-family:\00003233}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/mjumbewu\/Programming\/projects\/elevator-pitch-builder\/src\/styles\/main\.scss}line{font-family:\00003234}}
 .pitch-container section.collapsed .name {
   height: 100%;
   padding: 0;
   line-height: 4rem;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/mjumbewu\/Programming\/projects\/elevator-pitch-builder\/src\/styles\/main\.scss}line{font-family:\00003239}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/mjumbewu\/Programming\/projects\/elevator-pitch-builder\/src\/styles\/main\.scss}line{font-family:\00003240}}
 .pitch-container .who-section .name {
   background-color: #ECB24F;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/mjumbewu\/Programming\/projects\/elevator-pitch-builder\/src\/styles\/main\.scss}line{font-family:\00003240}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/mjumbewu\/Programming\/projects\/elevator-pitch-builder\/src\/styles\/main\.scss}line{font-family:\00003241}}
 .pitch-container .what-section .name {
   background-color: #C7380E;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/mjumbewu\/Programming\/projects\/elevator-pitch-builder\/src\/styles\/main\.scss}line{font-family:\00003241}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/mjumbewu\/Programming\/projects\/elevator-pitch-builder\/src\/styles\/main\.scss}line{font-family:\00003242}}
 .pitch-container .why-section .name {
   background-color: #888457;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/mjumbewu\/Programming\/projects\/elevator-pitch-builder\/src\/styles\/main\.scss}line{font-family:\00003242}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/mjumbewu\/Programming\/projects\/elevator-pitch-builder\/src\/styles\/main\.scss}line{font-family:\00003243}}
 .pitch-container .goal-section .name {
   background-color: #536F72;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/mjumbewu\/Programming\/projects\/elevator-pitch-builder\/src\/styles\/main\.scss}line{font-family:\00003243}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/mjumbewu\/Programming\/projects\/elevator-pitch-builder\/src\/styles\/main\.scss}line{font-family:\00003244}}
 .pitch-container .review-section .name {
   background-color: #48211C;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/mjumbewu\/Programming\/projects\/elevator-pitch-builder\/src\/styles\/main\.scss}line{font-family:\00003245}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/mjumbewu\/Programming\/projects\/elevator-pitch-builder\/src\/styles\/main\.scss}line{font-family:\00003246}}
 .pitch-container .pitch-who {
   color: #ECB24F;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/mjumbewu\/Programming\/projects\/elevator-pitch-builder\/src\/styles\/main\.scss}line{font-family:\00003246}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/mjumbewu\/Programming\/projects\/elevator-pitch-builder\/src\/styles\/main\.scss}line{font-family:\00003247}}
 .pitch-container .pitch-what {
   color: #C7380E;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/mjumbewu\/Programming\/projects\/elevator-pitch-builder\/src\/styles\/main\.scss}line{font-family:\00003247}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/mjumbewu\/Programming\/projects\/elevator-pitch-builder\/src\/styles\/main\.scss}line{font-family:\00003248}}
 .pitch-container .pitch-why {
   color: #888457;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/mjumbewu\/Programming\/projects\/elevator-pitch-builder\/src\/styles\/main\.scss}line{font-family:\00003248}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/mjumbewu\/Programming\/projects\/elevator-pitch-builder\/src\/styles\/main\.scss}line{font-family:\00003249}}
 .pitch-container .pitch-goal {
   color: #536F72;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/mjumbewu\/Programming\/projects\/elevator-pitch-builder\/src\/styles\/main\.scss}line{font-family:\00003249}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/mjumbewu\/Programming\/projects\/elevator-pitch-builder\/src\/styles\/main\.scss}line{font-family:\00003250}}
 .pitch-container .pitch-review {
   color: #48211C;
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/mjumbewu\/Programming\/projects\/elevator-pitch-builder\/src\/styles\/main\.scss}line{font-family:\00003251}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/mjumbewu\/Programming\/projects\/elevator-pitch-builder\/src\/styles\/main\.scss}line{font-family:\00003252}}
 .pitch-container .pitch-review {
   position: absolute;
   left: 1rem;
@@ -335,7 +336,7 @@ section {
   margin: 0;
   /*margin-bottom: 5rem;*/
 }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/mjumbewu\/Programming\/projects\/elevator-pitch-builder\/src\/styles\/main\.scss}line{font-family:\00003267}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/mjumbewu\/Programming\/projects\/elevator-pitch-builder\/src\/styles\/main\.scss}line{font-family:\00003268}}
 .pitch-container .pitch-review-help {
   position: absolute;
   left: 1rem;
@@ -345,41 +346,64 @@ section {
   margin-top: -9rem;
   font-size: 0.8rem;
 }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/mjumbewu\/Programming\/projects\/elevator-pitch-builder\/src\/styles\/main\.scss}line{font-family:\00003279}}
+.pitch-container section.collapsed .pitch-review-help {
+  display: none;
+}
 
 @media (max-height: 17rem) {
   /* ...keyboard shown on mobile... */
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/mjumbewu\/Programming\/projects\/elevator-pitch-builder\/src\/styles\/main\.scss}line{font-family:\00003281}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/mjumbewu\/Programming\/projects\/elevator-pitch-builder\/src\/styles\/main\.scss}line{font-family:\00003286}}
   .pitch-container section.collapsed {
     display: none;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/mjumbewu\/Programming\/projects\/elevator-pitch-builder\/src\/styles\/main\.scss}line{font-family:\00003285}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/mjumbewu\/Programming\/projects\/elevator-pitch-builder\/src\/styles\/main\.scss}line{font-family:\00003290}}
   .pitch-container section.expanded {
     bottom: 0;
   }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/mjumbewu\/Programming\/projects\/elevator-pitch-builder\/src\/styles\/main\.scss}line{font-family:\00003294}}
+  .pitch-container .help.animated,
+  .pitch-container section.animated.expanded,
+  .pitch-container section.animated.collapsed,
+  .pitch-container section.animated.expanded .name,
+  .pitch-container section.animated.collapsed .name {
+    -moz-transition: left 0.5s cubic-bezier(0.23, 1, 0.32, 1), right 0.5s cubic-bezier(0.23, 1, 0.32, 1), margin-right 0.5s cubic-bezier(0.23, 1, 0.32, 1), padding-left 0.5s cubic-bezier(0.23, 1, 0.32, 1), padding-right 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+    -o-transition: left 0.5s cubic-bezier(0.23, 1, 0.32, 1), right 0.5s cubic-bezier(0.23, 1, 0.32, 1), margin-right 0.5s cubic-bezier(0.23, 1, 0.32, 1), padding-left 0.5s cubic-bezier(0.23, 1, 0.32, 1), padding-right 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+    -webkit-transition: left 0.5s cubic-bezier(0.23, 1, 0.32, 1), right 0.5s cubic-bezier(0.23, 1, 0.32, 1), margin-right 0.5s cubic-bezier(0.23, 1, 0.32, 1), padding-left 0.5s cubic-bezier(0.23, 1, 0.32, 1), padding-right 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+    transition: left 0.5s cubic-bezier(0.23, 1, 0.32, 1), right 0.5s cubic-bezier(0.23, 1, 0.32, 1), margin-right 0.5s cubic-bezier(0.23, 1, 0.32, 1), padding-left 0.5s cubic-bezier(0.23, 1, 0.32, 1), padding-right 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+  }
 }
 @media (max-height: 12rem) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/mjumbewu\/Programming\/projects\/elevator-pitch-builder\/src\/styles\/main\.scss}line{font-family:\00003293}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/mjumbewu\/Programming\/projects\/elevator-pitch-builder\/src\/styles\/main\.scss}line{font-family:\00003310}}
+  .pitch-container section.animated.expanded .name,
+  .pitch-container section.animated.collapsed .name {
+    -moz-transition: all 1s;
+    -o-transition: all 1s;
+    -webkit-transition: all 1s;
+    transition: all 1s;
+  }
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/mjumbewu\/Programming\/projects\/elevator-pitch-builder\/src\/styles\/main\.scss}line{font-family:\00003315}}
   .pitch-container section.expanded .name {
     display: none;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/mjumbewu\/Programming\/projects\/elevator-pitch-builder\/src\/styles\/main\.scss}line{font-family:\00003297}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/mjumbewu\/Programming\/projects\/elevator-pitch-builder\/src\/styles\/main\.scss}line{font-family:\00003319}}
   .pitch-container .component-text-wrapper, .pitch-container .help {
     bottom: 1rem;
   }
 }
 @media (max-height: 6rem) {
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/mjumbewu\/Programming\/projects\/elevator-pitch-builder\/src\/styles\/main\.scss}line{font-family:\00003304}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/mjumbewu\/Programming\/projects\/elevator-pitch-builder\/src\/styles\/main\.scss}line{font-family:\00003326}}
   .pitch-container {
     left: 0;
     top: 0;
     right: 0;
     bottom: 0;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/mjumbewu\/Programming\/projects\/elevator-pitch-builder\/src\/styles\/main\.scss}line{font-family:\00003307}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/mjumbewu\/Programming\/projects\/elevator-pitch-builder\/src\/styles\/main\.scss}line{font-family:\00003329}}
   .pitch-container section.expanded .label {
     display: none;
   }
-@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/mjumbewu\/Programming\/projects\/elevator-pitch-builder\/src\/styles\/main\.scss}line{font-family:\00003311}}
+@media -sass-debug-info{filename{font-family:file\:\/\/\/home\/mjumbewu\/Programming\/projects\/elevator-pitch-builder\/src\/styles\/main\.scss}line{font-family:\00003333}}
   .pitch-container .component-text-wrapper, .pitch-container .help {
     left: 0;
     right: 0;
