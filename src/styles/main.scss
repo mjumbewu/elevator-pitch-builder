@@ -63,6 +63,25 @@ section {
 	bottom: 1em;
 }
 
+.pitch-start-btn {
+	display: inline-block;
+	background-color: #532;
+	color: white;
+	text-decoration: none;
+	padding: 1rem;
+	border: 1px solid rgba(0,0,0,0.5);
+	box-shadow: 0 2px 5px rgba(0,0,0,0.75);
+	text-align: center;
+	font-weight: bold;
+	width: 100%;
+	box-sizing: border-box;
+}
+
+.pitch-start-btn:focus {
+	position: relative;
+	top: 1px;
+	box-shadow: 0 0 2px rgba(0,0,0,0.75);
+}
 
 /*
  * Pitch Components
@@ -364,6 +383,10 @@ section {
 }
 
 @media (min-width: 25rem) {
+	.pitch-start-btn {
+		width: auto;
+	}
+
 	.pitch-container {
 		.pitch-review {
 			right: 13rem;
