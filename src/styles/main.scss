@@ -119,6 +119,7 @@ section {
 		top: 2rem;
 
 		margin-left: 0;
+		overflow: hidden;
 	}
 	.help.collapsed {
 		left: 100%;
@@ -274,6 +275,10 @@ section {
 
 		font-size: 0.8rem;
 	}
+
+	section.collapsed .pitch-review-help {
+		display: none;
+	}
 }
 
 @media (max-height: 17rem) { /* ...keyboard shown on mobile... */
@@ -285,11 +290,28 @@ section {
 		section.expanded {
 			bottom: 0;
 		}
+
+		.help.animated,
+		section.animated.expanded,
+		section.animated.collapsed,
+		section.animated.expanded .name,
+		section.animated.collapsed .name {
+			@include transition(left 0.5s $ease-way-out,
+				                right 0.5s $ease-way-out,
+				                margin-right 0.5s $ease-way-out,
+				                padding-left 0.5s $ease-way-out,
+				                padding-right 0.5s $ease-way-out);
+		}
 	}
 }
 
 @media (max-height: 12rem) {
 	.pitch-container {
+		section.animated.expanded .name,
+		section.animated.collapsed .name {
+			@include transition();
+		}
+
 		section.expanded .name {
 			display: none;
 		}
