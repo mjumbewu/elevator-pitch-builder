@@ -38,6 +38,10 @@ var Pitch = Pitch || {};
 
     handleHelpClick: function() {
       this.$('.help').toggleClass('expanded collapsed');
+
+      if (this.$('.help').hasClass('collapsed')) {
+        _.delay(_.bind(function() { this.$('.component-text').focus(); }, this), 400);
+      }
     },
 
     handleHelpSwipeRight: function() {
