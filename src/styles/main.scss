@@ -125,6 +125,7 @@ section {
 		left: 100%;
 
 		margin-left: -6em;
+		color: rgba(255,255,255,0);
 	}
 	.help.animated {
 		@include transition(left 0.5s $ease-way-out,
@@ -133,6 +134,16 @@ section {
 			                top 0.5s $ease-way-out,
 			                margin-left 0.5s $ease-way-out,
 			                border-radius 0.5s $ease-way-out);
+	}
+
+	.help-text {
+		opacity: 1;
+	}
+	.collapsed .help-text {
+		opacity: 0;
+	}
+	.animated.expanded .help-text {
+		@include transition(opacity 0.2s $ease-way-in 0.4s);
 	}
 
 	.help:hover {
