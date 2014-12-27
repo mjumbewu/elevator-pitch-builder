@@ -33,7 +33,19 @@ var Pitch = Pitch || {};
     },
 
     initializePitchModel: function() {
-      return new Pitch.PitchModel({});
+      var pitchData;
+
+      if (Pitch.localStorageSupport()) {
+        try {
+          pitchData = JSON.parse(localStorage.getItem('pitch') || '{}');
+        } catch (e) {
+          pitchData = {};
+        }
+      } else {
+        pitchData = {};
+      }
+
+      return new Pitch.PitchModel(pitchData);
     },
 
     buildPitchComponentView: function(component) {
