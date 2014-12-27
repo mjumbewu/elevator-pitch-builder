@@ -79,6 +79,7 @@ module.exports = function(grunt) {
     handlebars: {
       options: {
         namespace: 'Handlebars.Templates',
+        partialsUseNamespace: true,
         processName: function(filePath) {
           return filePath.replace(/src\/templates\/(.*)\.(handlebars|html|txt)/, '$1');
         }

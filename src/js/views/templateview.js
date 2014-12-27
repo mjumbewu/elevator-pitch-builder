@@ -10,10 +10,14 @@ var Pitch = Pitch || {};
     },
 
     setTemplate: function(template) {
+      this.template = this.resolveTemplate(template);
+    },
+
+    resolveTemplate: function(template) {
       if (_.isString(template)) {
-        this.template = Handlebars.Templates[template];
+        return Handlebars.Templates[template];
       } else if (_.isFunction(template)) {
-        this.template = template;
+        return template;
       } else {
         throw "template must be a template name or a function.";
       }
@@ -24,9 +28,16 @@ var Pitch = Pitch || {};
       return data;
     },
 
+    renderTemplate: function(template) {
+      var context, html;
+      template = this.resolveTemplate(template);
+      context = this.getTemplateData();
+      html = template(context);
+      return html;
+    },
+
     render: function() {
-      var context = this.getTemplateData(),
-          html = this.template(context);
+      var html = this.renderTemplate(this.template);
       this.$el.html(html);
       return this;
     }

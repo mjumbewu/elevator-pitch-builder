@@ -169,7 +169,17 @@ section {
 		border-bottom: none;
 	}
 
-	section.animated.expanded,
+	section.animated.expanded {
+		@include transition(left 0.5s $ease-way-in-out,
+			                right 0.5s $ease-way-in-out,
+			                top 0.5s $ease-way-in-out,
+			                bottom 0.5s $ease-way-in-out,
+			                margin-left 0.5s $ease-way-in-out,
+			                margin-right 0.5s $ease-way-in-out,
+			                margin-top 0.5s $ease-way-in-out,
+			                border-radius 0.5s $ease-way-in-out);
+	}
+
 	section.animated.collapsed {
 		@include transition(left 0.5s $ease-way-out,
 			                right 0.5s $ease-way-out,
@@ -186,7 +196,7 @@ section {
 		left: 0;
 		right: 0;
 		top: 0;
-		bottom: 6rem;
+		bottom: 5rem;
 
 		margin-left: 0;
 		margin-right: 0;
@@ -198,9 +208,9 @@ section {
 	section.collapsed {
 		position: absolute;
 		top: 100%;
-		bottom: 1rem;
+		bottom: 0;
 
-		margin-top: -5rem;
+		margin-top: -4rem;
 
 		border-radius: 2rem;
 	}
@@ -231,9 +241,16 @@ section {
 	.why-section .name { background-color: $why-color; }
 	.goal-section .name { background-color: $goal-color; }
 	.review-section .name { background-color: $review-color; }
+
+	.pitch-who { color: $who-color; }
+	.pitch-what { color: $what-color; }
+	.pitch-why { color: $why-color; }
+	.pitch-goal { color: $goal-color; }
+	.pitch-review { color: $review-color; }
+
 }
 
-@media (max-height: 18rem) { /* ...keyboard shown on mobile... */
+@media (max-height: 17rem) { /* ...keyboard shown on mobile... */
 	.pitch-container {
 		section.collapsed {
 			display: none;
