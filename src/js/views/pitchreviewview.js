@@ -26,21 +26,30 @@ var Pitch = Pitch || {};
     },
 
     getTemplateData: function() {
-      var data = {},
-          wordcount = this.wordCount(this.model.get('who')) +
-                      this.wordCount(this.model.get('what')) +
-                      this.wordCount(this.model.get('why')) +
-                      this.wordCount(this.model.get('goal')),
-          estseconds = Math.round(wordcount / 4);
+      if (this.templateData && !this.modelChanged) {
+        return this.templateData;
+      } else {
+        this.modelChanged = false;
 
-      data.pitch = this.model.toJSON();
-      data.component = this.pitchcomponentdata;
-      data.analysis = { wordcount: wordcount, estseconds: estseconds };
-      return data;
+        var data = {},
+            wordcount = this.wordCount(this.model.get('who')) +
+                        this.wordCount(this.model.get('what')) +
+                        this.wordCount(this.model.get('why')) +
+                        this.wordCount(this.model.get('goal')),
+            estseconds = Math.round(wordcount / 4);
+
+        data.pitch = this.model.toJSON();
+        data.component = this.pitchcomponentdata;
+        data.analysis = { wordcount: wordcount, estseconds: estseconds };
+
+        this.templateData = data;
+        return data;
+      }
     },
 
     handleModelChange: function() {
-      var editableReviewHtml, pitchAnalysisHtml;
+      var editableReviewHtml, pitchAnalysisHtml, pitchEmailHtml;
+      this.modelChanged = true;
 
       if (this.focusCount === 0) {
         editableReviewHtml = this.renderTemplate('editable-review-tpl');
@@ -49,6 +58,9 @@ var Pitch = Pitch || {};
 
       pitchAnalysisHtml = this.renderTemplate('pitch-analysis-tpl');
       this.$('.pitch-analysis').html(pitchAnalysisHtml);
+
+      pitchEmailHtml = this.renderTemplate('pitch-mailto-tpl');
+      this.$('.pitch-email').html(pitchEmailHtml);
     },
 
     handleTextFocus: function() {
