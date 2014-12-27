@@ -28,6 +28,49 @@ section {
 	overflow: hidden;
 }
 
+
+/*
+ * Letter icon code adapted from
+ * http://codepen.io/pouretrebelle/pen/gIBAv
+ */
+$lettercolor: $review-color;
+$letterbg: $component-gray;
+$thickness: 1;
+$letterheight: 1.4rem;
+$letterwidth: 2rem;
+
+.letter {
+  display: inline-block;
+  margin: 0 auto;
+  background-color: $lettercolor;
+  position: relative;
+  height: $letterheight;
+  width: $letterwidth;
+  top: $letterheight / 4;
+  overflow: hidden;
+
+  &:before, &:after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    height: $letterwidth * 0.6;
+    width: $letterwidth * 0.6;
+    transform: rotate(45deg) skew(-5deg,-5deg);
+    margin-left: -$letterwidth * 0.5;
+    height: $letterwidth;
+    width: $letterwidth;
+    background-color: $lettercolor;
+  }
+  &:before {
+    bottom: -100%;
+    box-shadow: -#{$thickness}px -#{$thickness}px 0 0 $letterbg;
+  }
+  &:after {
+    top: -95%;
+    box-shadow: #{$thickness}px #{$thickness}px 0 0 $letterbg;
+  }
+}
+
 /*
  * Intro Section
  * ====================================
@@ -336,33 +379,35 @@ section {
 		display: block;
 		position: absolute;
 
-		top: -0.5rem;
+		top: -0.7rem;
 		left: 100%;
-		width: 2rem;
-		height: 2rem;
 
 		margin-left: -3rem;
-		// border: 1px solid black;
 		box-sizing: border-box;
-
-		font-size: 0;
 	}
 
 	.pitch-email-link {
 		text-decoration: none;
 		color: $review-color;
+		font-size: 0;
+		line-height: $letterheight;
 	}
 
-	.pitch-email-link:before {
-		display: block;
-		width: 100%;
-		height: 100%;
-		font-size: 2rem;
-		line-height: 2rem;
-		text-align: center;
-		display: block;
-		content: '\2709';
+	.letter {
+		top: $letterheight / 4;
+		margin-right: 0.5em;
 	}
+
+	// .pitch-email-link:before {
+	// 	display: block;
+	// 	width: 100%;
+	// 	height: 100%;
+	// 	font-size: 2rem;
+	// 	line-height: 2rem;
+	// 	text-align: center;
+	// 	display: block;
+	// 	content: '\2709';
+	// }
 
 	.pitch-analysis {
 		display: block;
@@ -428,13 +473,13 @@ section {
 		.pitch-email {
 			left: 100%;
 			margin-left: -12rem;
+			right: 1em;
 			width: auto;
 		}
 
 		.pitch-email-link {
 			font-size: 0.8rem;
-			line-height: 2rem;
-			vertical-align: top;
+			// vertical-align: top;
 			font-weight: bold;
 		}
 
@@ -442,12 +487,12 @@ section {
 			text-decoration: underline;
 		}
 
-		.pitch-email-link:before {
-			display: inline-block;
-			width: auto;
-			margin-right: 0.5rem;
-			font-weight: normal;
-		}
+		// .pitch-email-link:before {
+		// 	display: inline-block;
+		// 	width: auto;
+		// 	margin-right: 0.5rem;
+		// 	font-weight: normal;
+		// }
 
 		.pitch-analysis {
 			display: block;
