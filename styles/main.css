@@ -101,7 +101,7 @@ section {
   /*border-bottom: 1px solid $component-gray;*/
   border-top: 1px solid rgba(0, 0, 0, 0.25);
   text-align: center;
-  z-index: 100;
+  z-index: 99;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/mjumbewu\/Programming\/projects\/elevator-pitch-builder\/src\/styles\/main\.scss}line{font-family:\00003103}}
 .pitch-container .content {
