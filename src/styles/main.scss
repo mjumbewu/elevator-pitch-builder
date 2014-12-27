@@ -290,6 +290,10 @@ section {
 	section.collapsed .pitch-review-help {
 		display: none;
 	}
+
+	.pitch-analysis {
+		display: none;
+	}
 }
 
 @media (min-width: 25rem) {
@@ -299,6 +303,7 @@ section {
 		}
 
 		.pitch-analysis {
+			display: block;
 			position: absolute;
 			top: 0;
 			bottom: 5rem;
