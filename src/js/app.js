@@ -20,6 +20,8 @@ var Pitch = Pitch || {};
     this.whyView = this.buildPitchComponentView('why').render();
     this.goalView = this.buildPitchComponentView('goal').render();
     this.reviewView = this.buildPitchReviewView().render();
+
+    $(document).on('click', 'a', _.bind(this.handleLinkClick, this));
   };
 
   Pitch.App.prototype = {
@@ -112,6 +114,12 @@ var Pitch = Pitch || {};
       this.hideIntroSection();
       this.hideAllPitchSections();
       this.showPitchSection('review');
+    },
+    handleLinkClick: function(evt) {
+      var $target = $(evt.currentTarget);
+      if (window.ga) {
+        ga('send', 'event', 'link:' + ($target.text() || '').toLowerCase(), 'click');
+      }
     }
   };
 
