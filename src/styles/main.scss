@@ -273,7 +273,7 @@ section {
 		background-color: white;
 
 		margin: 0;
-		/*margin-bottom: 5rem;*/
+		overflow: auto;
 	}
 
 	.pitch-review-help {
@@ -289,6 +289,31 @@ section {
 
 	section.collapsed .pitch-review-help {
 		display: none;
+	}
+}
+
+@media (max-height: 20rem) { /* ...keyboard shown on mobile... */
+	.pitch-container {
+		section.collapsed {
+			margin-top: -2rem;
+			border-radius: 1rem;
+		}
+
+		section.collapsed .name {
+			line-height: 2rem;
+		}
+
+		section.expanded {
+			bottom: 3rem;
+		}
+
+		.pitch-review {
+			bottom: 5rem;
+		}
+
+		.pitch-review-help {
+			display: none;
+		}
 	}
 }
 
