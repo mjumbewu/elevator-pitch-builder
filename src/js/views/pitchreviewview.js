@@ -17,18 +17,38 @@ var Pitch = Pitch || {};
       this.focusCount = 0;
     },
 
+    wordCount: function(s) {
+      if (!s) {
+        return 0;
+      }
+
+      return s.split(' ').length;
+    },
+
     getTemplateData: function() {
-      var data = {};
+      var data = {},
+          wordcount = this.wordCount(this.model.get('who')) +
+                      this.wordCount(this.model.get('what')) +
+                      this.wordCount(this.model.get('why')) +
+                      this.wordCount(this.model.get('goal')),
+          estseconds = Math.round(wordcount / 4);
+
       data.pitch = this.model.toJSON();
       data.component = this.pitchcomponentdata;
+      data.analysis = { wordcount: wordcount, estseconds: estseconds };
       return data;
     },
 
     handleModelChange: function() {
+      var editableReviewHtml, pitchAnalysisHtml;
+
       if (this.focusCount === 0) {
-        var editableReviewHtml = this.renderTemplate('editable-review-tpl');
+        editableReviewHtml = this.renderTemplate('editable-review-tpl');
         this.$('.pitch-review').html(editableReviewHtml);
       }
+
+      pitchAnalysisHtml = this.renderTemplate('pitch-analysis-tpl');
+      this.$('.pitch-analysis').html(pitchAnalysisHtml);
     },
 
     handleTextFocus: function() {

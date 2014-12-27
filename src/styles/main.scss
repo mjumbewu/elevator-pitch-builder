@@ -292,6 +292,69 @@ section {
 	}
 }
 
+@media (min-width: 25rem) {
+	.pitch-container {
+		.pitch-review {
+			right: 13rem;
+		}
+
+		.pitch-analysis {
+			position: absolute;
+			top: 0;
+			bottom: 5rem;
+			left: 100%;
+			right: 1rem;
+
+			padding: 1em;
+			margin-left: -12rem;
+
+			background-color: #AC171D;
+			color: white;
+			font-weight: bold;
+		}
+
+		.pitch-analysis span {
+			display: block;
+		}
+
+		.stat-wrapper {
+			margin-top: 1rem;
+		}
+
+		.stat-wrapper:first-child {
+			margin-top: 0;
+		}
+
+		.stat-label {
+			font-size: 0.8rem;
+		}
+
+		.stat {
+			font-size: 1.5rem;
+		}
+	}
+}
+
+@media (min-height: 25rem) {
+	.pitch-container {
+		.pitch-analysis {
+			bottom: 10rem;
+		}
+	}
+}
+
+@media (max-height: 25rem) {
+	.pitch-container {
+		.pitch-review-help {
+			display: none;
+		}
+
+		.pitch-review {
+			bottom: 5rem;
+		}
+	}
+}
+
 @media (max-height: 20rem) { /* ...keyboard shown on mobile... */
 	.pitch-container {
 		section.collapsed {
@@ -309,10 +372,6 @@ section {
 
 		.pitch-review {
 			bottom: 5rem;
-		}
-
-		.pitch-review-help {
-			display: none;
 		}
 	}
 }
