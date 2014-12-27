@@ -147,11 +147,11 @@ section {
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/mjumbewu\/Programming\/projects\/elevator-pitch-builder\/src\/styles\/main\.scss}line{font-family:\00003145}}
 .pitch-container .animated.expanded .help-text {
-  -moz-transition: opacity 0.5s cubic-bezier(0.755, 0.05, 0.855, 0.06) 0.2s;
-  -o-transition: opacity 0.5s cubic-bezier(0.755, 0.05, 0.855, 0.06) 0.2s;
-  -webkit-transition: opacity 0.5s cubic-bezier(0.755, 0.05, 0.855, 0.06);
-  -webkit-transition-delay: 0.2s;
-  transition: opacity 0.5s cubic-bezier(0.755, 0.05, 0.855, 0.06) 0.2s;
+  -moz-transition: opacity 0.3s cubic-bezier(0.755, 0.05, 0.855, 0.06) 0.4s;
+  -o-transition: opacity 0.3s cubic-bezier(0.755, 0.05, 0.855, 0.06) 0.4s;
+  -webkit-transition: opacity 0.3s cubic-bezier(0.755, 0.05, 0.855, 0.06);
+  -webkit-transition-delay: 0.4s;
+  transition: opacity 0.3s cubic-bezier(0.755, 0.05, 0.855, 0.06) 0.4s;
 }
 @media -sass-debug-info{filename{font-family:file\:\/\/\/home\/mjumbewu\/Programming\/projects\/elevator-pitch-builder\/src\/styles\/main\.scss}line{font-family:\00003149}}
 .pitch-container .help:hover {
