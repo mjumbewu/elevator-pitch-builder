@@ -248,6 +248,32 @@ section {
 	.pitch-goal { color: $goal-color; }
 	.pitch-review { color: $review-color; }
 
+	.pitch-review {
+		position: absolute;
+		left: 1rem;
+		right: 1rem;
+		bottom: 10rem;
+		top: 2rem;
+
+		box-sizing: border-box;
+		padding: 1rem;
+		border: 1px solid rgba(0,0,0,0.333);
+		background-color: white;
+
+		margin: 0;
+		/*margin-bottom: 5rem;*/
+	}
+
+	.pitch-review-help {
+		position: absolute;
+		left: 1rem;
+		right: 1rem;
+		bottom: 5rem;
+		top: 100%;
+		margin-top: -9rem;
+
+		font-size: 0.8rem;
+	}
 }
 
 @media (max-height: 17rem) { /* ...keyboard shown on mobile... */
