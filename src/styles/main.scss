@@ -127,6 +127,22 @@ $letterwidth: 2rem;
 }
 
 /*
+ * Timing for section animations
+ * =============================
+ */
+$section-collapse-duration: 0.5s;
+$section-collapse-delay: 0;
+
+$section-expand-duration: 0.3s;
+$section-expand-delay: $section-collapse-duration / 2;
+
+$name-cover-duration: $section-collapse-duration / 2;
+$name-cover-delay: 0;
+
+$name-reveal-duration: 0.25s;
+$name-reveal-delay: $section-expand-duration + $section-expand-delay;
+
+/*
  * Pitch Components
  * ====================================
  */
@@ -156,7 +172,6 @@ $letterwidth: 2rem;
 		text-transform: uppercase;
 		margin: 0 0 1rem 0;
 		box-sizing: border-box;
-		/*border-bottom: 1px solid $component-gray;*/
 		border-top: 1px solid rgba(0, 0, 0, 0.25);
 		text-align: center;
 		z-index: 99;
@@ -254,25 +269,25 @@ $letterwidth: 2rem;
 	}
 
 	section.animated.expanded {
-		@include transition(left 0.5s $ease-way-in-out 0.3s,
-			                right 0.5s $ease-way-in-out 0.3s,
-			                top 0.5s $ease-way-in-out 0.3s,
-			                bottom 0.5s $ease-way-in-out 0.3s,
-			                margin-left 0.5s $ease-way-in-out 0.3s,
-			                margin-right 0.5s $ease-way-in-out 0.3s,
-			                margin-top 0.5s $ease-way-in-out 0.3s,
-			                border-radius 0.5s $ease-way-in-out 0.3s);
+		@include transition(left $section-expand-duration $ease-way-in-out $section-expand-delay,
+			                right $section-expand-duration $ease-way-in-out $section-expand-delay,
+			                top $section-expand-duration $ease-way-in-out $section-expand-delay,
+			                bottom $section-expand-duration $ease-way-in-out $section-expand-delay,
+			                margin-left $section-expand-duration $ease-way-in-out $section-expand-delay,
+			                margin-right $section-expand-duration $ease-way-in-out $section-expand-delay,
+			                margin-top $section-expand-duration $ease-way-in-out $section-expand-delay,
+			                border-radius $section-expand-duration $ease-way-in-out $section-expand-delay);
 	}
 
 	section.animated.collapsed {
-		@include transition(left 0.5s $ease-way-out,
-			                right 0.5s $ease-way-out,
-			                top 0.5s $ease-way-out,
-			                bottom 0.5s $ease-way-out,
-			                margin-left 0.5s $ease-way-out,
-			                margin-right 0.5s $ease-way-out,
-			                margin-top 0.5s $ease-way-out,
-			                border-radius 0.5s $ease-way-out);
+		@include transition(left $section-collapse-duration $ease-way-out,
+			                right $section-collapse-duration $ease-way-out,
+			                top $section-collapse-duration $ease-way-out,
+			                bottom $section-collapse-duration $ease-way-out,
+			                margin-left $section-collapse-duration $ease-way-out,
+			                margin-right $section-collapse-duration $ease-way-out,
+			                margin-top $section-collapse-duration $ease-way-out,
+			                border-radius $section-collapse-duration $ease-way-out);
 	}
 
 	section.expanded {
@@ -306,19 +321,19 @@ $letterwidth: 2rem;
 	.review-section.collapsed { margin-left: -4rem; left: 100%; margin-right: -0rem; right: 0%; }
 
 	section.animated.collapsed .name {
-		@include transition(height 0.25s $ease-way-out,
-			                padding-top 0.5s $ease-way-out,
-			                padding-left 0.5s $ease-way-out,
-			                padding-right 0.5s $ease-way-out,
-			                line-height 0.5s $ease-way-out);
+		@include transition(height $name-cover-duration $ease-way-out,
+			                padding-top $section-collapse-duration $ease-way-out,
+			                padding-left $section-collapse-duration $ease-way-out,
+			                padding-right $section-collapse-duration $ease-way-out,
+			                line-height $section-collapse-duration $ease-way-out);
 	}
 
 	section.animated.expanded .name {
-		@include transition(height 0.5s $ease-way-out 0.3s,
-			                padding-top 0.5s $ease-way-out 0.3s,
-			                padding-left 0.5s $ease-way-out 0.3s,
-			                padding-right 0.5s $ease-way-out 0.3s,
-			                line-height 0.5s $ease-way-out 0.3s);
+		@include transition(height $name-reveal-duration $ease-way-out $name-reveal-delay,
+			                padding-top $section-expand-duration $ease-way-out $section-expand-delay,
+			                padding-left $section-expand-duration $ease-way-out $section-expand-delay,
+			                padding-right $section-expand-duration $ease-way-out $section-expand-delay,
+			                line-height $section-expand-duration $ease-way-out $section-expand-delay);
 	}
 
 	section.collapsed .name {
